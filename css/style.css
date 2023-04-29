@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #FDEEEE;
     font-family: 'Poppins', sans-serif;
@@ -139,18 +140,18 @@ main .content {
     display: flex;
 }
 main section {
-    flex: 1;
+    flex: 1;  /*máximo de largura entre um lado e outro*/
 }
 main aside {
-    background: green;
-    min-width: 250px;
+    background: #FDEEEE;
+    min-width: 350px;
 }
 table {
     width: 100%;
     border-collapse: collapse; /*juntar as bordas das células da tabela. Faz uma risca divisória*/
 }
 table thead tr {
-    border-bottom: 3px solid #eee; /**/
+    border-bottom: 3px solid #e3e1e1; /*linha divisória da tabela*/
 }
 table thead th {
     text-align: left;
@@ -208,10 +209,10 @@ table tbody tr td {
     height: 100%;
 }
 .qty :hover {
-    background: #ddd;
+    background: #FFCCCC;
 }
 .remove {
-    background: #eee;
+    background: #f48d8d;
     border: 0;
     width: 30px;
     height: 30px;
@@ -222,5 +223,53 @@ table tbody tr td {
     font-size: 20px;
 }
 .remove :hover {
-    background: #ddd;
+    background: #e76c6c;
 }
+aside {
+    margin-left: 30px;
+}
+aside .box {
+    margin-bottom: 20px;
+    border: 1 px solid #ccc;
+    background: #ffe5e5;
+    color: #222;
+}
+aside p {
+    padding: 15px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid #e2d1d1;
+    color: #222;
+}
+aside .info {
+    padding: 25px;
+    font-size: 16px;
+}
+aside .info div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+}
+aside footer {
+    padding: 15px 20px;
+    background: #ffd5d5;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+aside button {
+    border: 0;
+    padding: 15px 0;
+    color: white;
+    background: #4b9a30;
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-radius: 7px;
+}
+ aside button :hover {
+    background: #94E487C7;
+}
+
