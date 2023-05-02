@@ -193,4 +193,59 @@ header {
 }
 .banner .pointer.active {
     background-color: #FDEEEE;
+}  
+
+/* ROLAGEM */
+
+
+
+/* DESTAQUES */
+
+.container {   
+    background-color: rgba(112, 178, 90, 0.22);
+    display: grid;
+    grid-template-columns: 600px repeat(2, 286px); /* = 600px 286px 286px;*/
+    /*grid-template-columns: repeat(3, 1fr); /*Tamanho das colunas. 1º nº = qtd colunas. 2º- Fr só funciona no grid = fração do espaço disponível no grid. 1 fr é flexível. Ex: 2fr 1fr 3fr 1fr. Pode usar tb ex: auto 200px 100px;*/
+    grid-gap: 20px; /*espaçamento entre itens. primeiro refere-se ao espaço entre linha e o segundo a coluna. Ex: 10px 30px. Pode-se usar só gap, mas ainda é melhor usar grid-gap, pois alguns navegadores nao lêem.*/
+    margin: auto;
+    max-width: 800vw;
+    padding: 10px;  
+    justify-content: center;
+    align-content: center;  
+}
+.item:nth-child(1) {
+    grid-row: 1 / 3; /*equivale a grid-row-start (primeira linha) e grid-row-end, respectivamente.*/
+}
+.item {
+    display: grid;   
+}
+.item p {
+    text-align: center;
+}
+.item-title {
+    background-color: rgba(112, 178, 90, 0.22);
+    text-align: center;
+    margin-top: 10px;
+}
+/*responsividade não deu certo*/
+@media (min-width: 601px) and (max-width: 1024px) {  
+    .container {
+        grid-template-columns: repeat (2, 1fr);
+    }
+}
+@media (max-width: 750px) {
+    .container {
+        grid-template-columns: repeat 1fr;
+    }
 }  /**/
+
+
+/* FORMULÁRIO */
+
+
+
+
+/*
+
+    
+*/
