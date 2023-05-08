@@ -16,20 +16,15 @@ body {
     /*background: var(--main-color);*/
     color: var(--text-color)
 }
+
+/* HEADER */
 header {
-    /*position: fixed;
     width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;*/
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    /*padding: 28px 12%;*/
     transition: all .50s ease;
-    background: var(--bg-color);
-    width: 100%;
+    background: var(--bg-color);   
 }
 .logo {
     display: flex;
@@ -139,26 +134,34 @@ header {
         right: 2%;
     }
 }
+/* FIM HEADER*/
+
 
 /* BANNER */
 
 .banner {
-    height: 75vh;
+    height: 65vh;
     background-color: var(--main-color);
     background-image: url('../images/banner1.svg');
     background-size: contain; /*ajustar o tamanho da img de forma a preencher todo o espaço*/
     background-position: bottom; /*ajustar a posição da img*/
-    overflow: hidden; /*tudo que passar do banner, ele vai ignorar. Some a barra*/
+    overflow: hidden;  /*tudo que passar do banner, ele vai ignorar. Some a barra*/
+    background-size: cover;
 }
+
 .banner .sliders {
     width: 800vw;
     height: 100%;
 }
+
 .banner .slide {    
-    width: 100vw;
+    width: ;
     height: 100%;
     display: inline-block; /*inline para ficar um ao lado do outro e block para manter as proporcionalidades*/
 }
+
+
+/*excluido
 .banner .slidearea {
     display: flex;
     height: 100%;
@@ -174,6 +177,9 @@ header {
     font-size: 26px;
     font-family:'Caveat';
 }
+*/
+
+
 .banner .sliders-pointers {
     width: 100vw;
     height: 20px;
@@ -195,6 +201,24 @@ header {
 .banner .pointer.active {
     background-color: #FDEEEE;
 }  
+/*
+.slider {
+    height: 65vh;
+    background-color: var(--main-color);
+    background-size: contain; /*ajustar o tamanho da img de forma a preencher todo o espaço
+    background-position: bottom; /*ajustar a posição da img
+    background-size: cover;
+    overflow: hidden; /*tudo que passar do banner, ele vai ignorar. Some a barra
+    background-image: url('../images/banner1.svg');
+    background-image: url('../images/maos.svg');
+} 
+*/  
+
+
+
+
+
+
 
 
 /* ROLAGEM */
@@ -220,7 +244,7 @@ header {
     display: grid;
     grid-template-columns: 600px repeat(2, 286px); /* = 600px 286px 286px;*/
     /*grid-template-columns: repeat(3, 1fr); /*Tamanho das colunas. 1º nº = qtd colunas. 2º- Fr só funciona no grid = fração do espaço disponível no grid. 1 fr é flexível. Ex: 2fr 1fr 3fr 1fr. Pode usar tb ex: auto 200px 100px;*/
-    grid-gap: 20px; /*espaçamento entre itens. primeiro refere-se ao espaço entre linha e o segundo a coluna. Ex: 10px 30px. Pode-se usar só gap, mas ainda é melhor usar grid-gap, pois alguns navegadores nao lêem.*/
+    grid-gap: 40px; /*espaçamento entre itens. primeiro refere-se ao espaço entre linha e o segundo a coluna. Ex: 10px 30px. Pode-se usar só gap, mas ainda é melhor usar grid-gap, pois alguns navegadores nao lêem.*/
     margin: auto;
     max-width: 800vw;
     padding: 10px;  
@@ -239,6 +263,7 @@ header {
 .item-title {
     background-color: rgba(112, 178, 90, 0.22);
     text-align: center;
+    padding-top: 20px;
 }
 /*responsividade não deu certo
 @media (min-width: 601px) and (max-width: 1024px) {  
@@ -334,14 +359,74 @@ footer {
 } 
 
 
-/* PÁGINA PANCS */
+/* PÁGINA SALADAS / PANCS */
+
+.title {
+    text-align: center;
+    padding-top: 60px;
+}
+.list {
+    display: flex;
+    padding: 60px;
+    justify-content: space-evenly;
+}
+.list2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px;
+}
+.list-product {
+    text-align: center;
+    font-weight: bold;
+}
+.tipo {
+    margin-top: 10px;
+}
+.preco {
+    margin-top: 14px;
+    font-weight: lighter;
+    
+}
+.list-product .product-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 25px;
+}
+.product-button {
+    padding: 10px 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight:lighter;
+    color: #825858;
+    width: 180px;
+    background: #F1B3B3;
+    border-radius: 10px;
+    cursor: pointer;    
+}
+.list-button{
+    padding: 120px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.view-button {
+    padding: 15px 10px;
+    text-align: center;
+    width: 280px;
+    background: #F1D8D8;
+    border: 0px solid;
+    border-radius: 2px;
+    cursor: pointer;
+}
 
 
-/* CARRINHO */
+/*CARRINHO*/
 
 main {
     background:#FDEEEE;
-    padding: 0 30px;
+    padding: 0 0px;
 }
 main .page-title {
     font-size: 40px;
