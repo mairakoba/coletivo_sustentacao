@@ -179,7 +179,6 @@ header {
 }
 */
 
-
 .banner .sliders-pointers {
     width: 100vw;
     height: 20px;
@@ -216,11 +215,6 @@ header {
 
 
 
-
-
-
-
-
 /* ROLAGEM */
 
 .topic {
@@ -244,7 +238,7 @@ header {
     display: grid;
     grid-template-columns: 600px repeat(2, 286px); /* = 600px 286px 286px;*/
     /*grid-template-columns: repeat(3, 1fr); /*Tamanho das colunas. 1º nº = qtd colunas. 2º- Fr só funciona no grid = fração do espaço disponível no grid. 1 fr é flexível. Ex: 2fr 1fr 3fr 1fr. Pode usar tb ex: auto 200px 100px;*/
-    grid-gap: 40px; /*espaçamento entre itens. primeiro refere-se ao espaço entre linha e o segundo a coluna. Ex: 10px 30px. Pode-se usar só gap, mas ainda é melhor usar grid-gap, pois alguns navegadores nao lêem.*/
+    grid-gap: 55px; /*espaçamento entre itens. primeiro refere-se ao espaço entre linha e o segundo a coluna. Ex: 10px 30px. Pode-se usar só gap, mas ainda é melhor usar grid-gap, pois alguns navegadores nao lêem.*/
     margin: auto;
     max-width: 800vw;
     padding: 10px;  
@@ -278,14 +272,96 @@ header {
 }  
 */
 
-/* FORMULÁRIO */
 
-/**/
+/* FORMULÁRIO */     /**/
 
-/*
+.contact {
+    padding: 30px 135px;
+} 
+.inform {
+    background: rgba(231, 209, 209, 0.8);
+    display: flex;
+    justify-content: space-around;    
+    border: none;
+    padding: 30px;
+}
+.contact-inf {
+    padding: 30px;
+    display: flex;
+    flex-direction:column;
+}
+.contact-inf h2 {
+    font-size: 27px;
+    align: center;
+  
+}
+.contact-inf p {
+    font-size: 17px;   
+    padding: 28px 0px;
+}
+.contact-inf .p1 {
+    font-weight:bolder;
+}
+.contact-inf .p2 {
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding: 0px;
+}
 
+.form {
+    padding: 30px;
+    width: 45%;    
+}
+.form input {
+    width: 100%;
+    height: 47px;
+    margin-bottom: 13px;
+    padding-left: 8px;
+    border: none;
+}
+.form input::placeholder {
+    color: rgba(205, 170, 170, 0.8);    
+}
+.form .email {
+    float: left;
+    width: 50%;
+    margin-right: 1em;
+}
+.form .tel {
+    width: 50%;
+}
+.form .email_tel {
+    display: flex;
+    width: 100%;
+}
+.form textarea {
+    width: 100%;
+    margin-bottom: 13px;
+    padding-left: 8px;
+    border: none;
+    padding-top: 12px;
+}
+.form textarea::placeholder {
+    color: rgba(205, 170, 170, 0.8);
+
+}
+.submit {
+    width: 40%;
+    height: 40px;
+    background: #e2c7c3;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 6px;
+    cursor: pointer;
+    color: rgba(154, 113, 113, 0.8);
+    letter-spacing: 1px;
+}
+.submit :hover {
+    color: rgba(205, 170, 170, 0.8);
     
-*/
+}
+
 
 /* RODAPÉ */
 

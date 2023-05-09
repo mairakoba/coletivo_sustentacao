@@ -168,15 +168,46 @@
 
         <!-- Contato-->
         <section class="contact">
-            <h2>Entre em contato</h2>
-            <p>Para dúvidas, sugestões e comentários.</p>
-            <p>(12)98765-4321 <br>
-                coletivo sustentacao@gmail.com
-            </p>
-        </section> 
-        <!-- Fim Contato -->
+            <fieldset class="inform">
+                <div class="contact-inf">
+                    <h2>Entre em contato</h2>
+                    <p>Para dúvidas, sugestões e comentários.</p>
+                    <p class="p1"><i class='bx bxl-whatsapp'></i> (12) 98765-4321 
+                    <p class="p2"><i class='bx bx-envelope'></i> coletivo sustentacao@gmail.com</p>
+                </div>
 
+                <div class="form">
+                    <form method="post">
+                        <label class="complet_name">
+                            <input type="text" name="complet_name" placeholder="Nome completo">
+                        </label>
+
+                        <label class="email_tel">
+                            <div class="email">
+                                <input type="text" name="email" placeholder="E-mail">
+                            </div>
+                            <div class="tel">
+                                <input type="text" name="tel" placeholder="Telefone">
+                            </div>
+                        </label>
+                        
+                        <label class="subject">
+                            <input type="text" name="subject" placeholder="Assunto">
+                        </label>
+
+                        <label class="comment">
+                            <textarea name="comment" placeholder="Mensagem" cols="60" rows="6"></textarea>
+                        </label>    
+                        
+                        <button class="submit" type="submit">Enviar</button> 
+
+                    </form>
+                </div>    
+            </fieldset>
+        </section>
+        <!-- Fim Contato -->
     </main>
+
 
     <!-- Rodapé -->
     <footer>
